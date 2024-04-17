@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProtectedRoutes from "./Components/ProtectedRoutes.jsx";
+import Login from "./Components/LoginPage.jsx";
+import Home from "./Components/Home.jsx";
+import { FirebaseContextProvider } from "./Context/FirebaseContext.jsx";
+import { ToastContainer } from "react-toastify"; // Import ToastContainer
+import "react-toastify/dist/ReactToastify.css"; // Import Toastify CSS
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <ToastContainer autoClose={2000} />
+        <Router>
+          <FirebaseContextProvider>
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route
+                path="/home"
+                element={
+                  <ProtectedRoutes>
+                    <Home />
+                  </ProtectedRoutes>
+                }
+              />
+            </Routes>
+          </FirebaseContextProvider>
+        </Router>
+      </>
     </div>
   );
 }
