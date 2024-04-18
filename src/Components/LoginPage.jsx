@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -34,6 +34,8 @@ const SignInContainer = styled.div`
     props.signingin !== true ? `transform: translateY(100%); opacity:0` : null}
 `;
 
+
+
 const Login = () => {
   const navigate = useNavigate();
   const [isLoginFormVisible, setIsLoginFormVisible] = useState(true);
@@ -42,6 +44,24 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const { signUp, logIn, googleLogin } = useFirebase();
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Check if authentication token exists in session storage or local storage
+    const authToken = localStorage.getItem('authToken'); // or sessionStorage
+
+    if (authToken) {
+      // If authentication token exists, consider user logged in
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      navigate("/home"); // Redirect to home page if logged in
+    }
+  }, [isLoggedIn, navigate]);
+
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -63,6 +83,7 @@ const Login = () => {
       await googleLogin();
       navigate("/home");
       toast.success("Logged in successfully!");
+      setIsLoggedIn(true);
     } catch (error) {
       console.log(error);
     }
@@ -75,6 +96,7 @@ const Login = () => {
       await logIn(email, password);
       navigate("/home");
       toast.success("Logged in successfully!");
+      setIsLoggedIn(true);
     } catch (error) {
       const errorCode = error.code;
       switch (errorCode) {
@@ -104,6 +126,7 @@ const Login = () => {
       setEmail("");
       setPassword("");
       handleToggleForms();
+      setIsLoggedIn(true);
     } catch (error) {
       const errorCode = error.code;
       switch (errorCode) {

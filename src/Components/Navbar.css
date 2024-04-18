@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-family: monospace;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-option {
+    cursor: pointer;
+  }
+  
+  .profile_pic {
+    position: relative;
+  }
+  
+  .profile_dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+  }
+  
+  .profile_pic:hover .profile_dropdown {
+    visibility: visible;
+  }
+  
+  .profile_dropdown button {
+    width: 100px;
+  }
+  
