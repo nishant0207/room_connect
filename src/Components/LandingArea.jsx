@@ -5,7 +5,7 @@ import SearchComponent from './SearchComponent';
 import RoomListingForm from './RoomListingForm';
 import Character from '../images/Screenshot 2024-04-18 at 9.03.03 AM.png';
 
-export default function LandingArea() {
+export default function Home() {
   const [selectedButton, setSelectedButton] = useState('');
 
   const handleButtonClick = (button) => {
@@ -14,7 +14,7 @@ export default function LandingArea() {
 
   return (
     <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-      <div style={{ fontSize: "80px" }}>
+      <div style={{ fontSize: "70px" }}>
         Find your VIT Room-mate.
       </div>
       <div style={{width:'50%', backgroundColor:'#5199EB', height:"200px", borderRadius:'20px', display:'flex',flexDirection:"row", padding:"5px"}}>

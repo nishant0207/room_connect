@@ -2,8 +2,9 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase} from "firebase/database";
+import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyBdOlNtla7zXuKdrTn-P2G7jWOXSbU6PWE",
   authDomain: "room-connect-4a339.firebaseapp.com",
   projectId: "room-connect-4a339",
@@ -12,10 +13,13 @@ const firebaseConfig = {
   appId: "1:585959100382:web:63c53829e5e0cd8ce3974f",
   measurementId: "G-K5PWBNXWW2",
   databaseURL:
-    "https://room-connect-88b78-default-rtdb.firebaseio.com/",
+    "https://room-connect-4a339-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const database = getDatabase(app);
+const auth = getAuth(app);
+const database = getDatabase(app);
+const firestore = getFirestore(app);
+export {auth,database,firestore};
+
 export default app;

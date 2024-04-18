@@ -15,12 +15,10 @@ const ProfileDropdown = () => {
     };
 
     return (
-        <div className="profile_dropdown" style={{fontSize:"14px"}}>
+        <div className="profile_dropdown" style={{fontSize:"14px",border:"1px solid gray"}}>
             <button className="btn btn-outline-success" onClick={handleLogout}>
                 Log Out
             </button>
-            <br />
-            <br />
             <div>
                 Settings
             </div>

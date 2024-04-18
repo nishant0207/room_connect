@@ -8,6 +8,20 @@
     font-family: monospace;
   }
   
+.nav-option {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav-option.selected {
+  background-color: rgb(99, 151, 229);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+
   .navbar {
     display: flex;
     align-items: center;
