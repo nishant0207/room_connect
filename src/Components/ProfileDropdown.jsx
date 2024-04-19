@@ -24,7 +24,7 @@ const ProfileDropdown = ({ onPageChange }) => {
             <button className="btn btn-outline-success" onClick={handleLogout}>
                 Log Out
             </button>
-            <div onClick={handleProfileClick}>
+            <div onClick={handleProfileClick} style={{cursor:'pointer'}}>
                 Profile
             </div>
             <div>

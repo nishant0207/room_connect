@@ -53,10 +53,10 @@ const RoomListingForm = () => {
 <input type='tel' id="phoneNumber" name="phoneNumber" placeholder='Phone No.' value={formData.phoneNumber} onChange={handleChange} required style={{ width: "100%", padding: "10px", marginBottom: "20px", border: "1px solid #ccc", borderRadius: "5px" }} />
 </div>
 <div>
-<input type="text" id="blockName" name="blockName" placeholder='Block Name' value={formData.blockName} onChange={handleChange} required style={{ width: "100%", padding: "10px", marginBottom: "20px", border: "1px solid #ccc", borderRadius: "5px" }} />
+<input type='text' id="blockName" name="blockName" placeholder='Block Name' value={formData.blockName} onChange={handleChange} required style={{ width: "100%", padding: "10px", marginBottom: "20px", border: "1px solid #ccc", borderRadius: "5px" }} />
 </div>
 <div>
-<input type="text" id="roomNumber" name="roomNumber" placeholder='Room No.' value={formData.roomNumber} onChange={handleChange} required style={{ width: "100%", padding: "10px", marginBottom: "20px", border: "1px solid #ccc", borderRadius: "5px" }} />
+<input type="number" id="roomNumber" name="roomNumber" placeholder='Room No.' value={formData.roomNumber} onChange={handleChange} required style={{ width: "100%", padding: "10px", marginBottom: "20px", border: "1px solid #ccc", borderRadius: "5px" }} />
 </div>
 <button type="submit" style={{ width: "100%", padding: "10px", backgroundColor: "#007bff", color: "#fff", border: "none", borderRadius: "5px", cursor: "pointer" }}>Submit</button>
         </form>

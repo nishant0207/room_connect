@@ -51,7 +51,7 @@ const Navbar = ({ onPageChange }) => {
                     onPageChange('whatsApp');
                 }}
             >
-                Whatspp
+                Whatsapp
             </div>
             <div
                 className={`nav-option${selectedOption === 'taxiShare' ? ' selected' : ''}`}
