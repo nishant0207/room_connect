@@ -5,13 +5,13 @@ const WhatsApp = () => {
     const imageUrl = "https://media.istockphoto.com/id/903294148/vector/speech-bubbles-for-comment.jpg?s=612x612&w=0&k=20&c=jha80JpZdZ7hSRGNBbTqmiLoqZOoK6nHvt23RXQ4I1Y=";
   // Sample data for WhatsApp groups
   const whatsappGroups = [
-    { id: 1, photo: imageUrl, name: 'Complex Mathematics', members: 50 },
-    { id: 2, photo: imageUrl, name: 'Database Management', members: 30 },
-    { id: 3, photo: imageUrl, name: 'Software Engineering', members: 25 },
-    { id: 4, photo: imageUrl, name: 'Embedded Systems', members: 40 },
-    { id: 5, photo: imageUrl, name: 'Operating Systems', members: 35 },
-    { id: 6, photo: imageUrl, name: 'Computer Networks', members: 20 },
-    { id: 7, photo: imageUrl, name: 'Probability & Statistics', members: 45 },
+    { id: 1, photo: imageUrl, name: 'Q Block', members: 50 },
+    { id: 2, photo: imageUrl, name: 'R Block', members: 30 },
+    { id: 3, photo: imageUrl, name: 'S Block', members: 25 },
+    { id: 4, photo: imageUrl, name: 'T Block', members: 40 },
+    { id: 5, photo: imageUrl, name: 'F Block', members: 35 },
+    { id: 6, photo: imageUrl, name: 'G Block', members: 20 },
+    { id: 7, photo: imageUrl, name: 'M Block', members: 45 },
   ];
 
   return (
