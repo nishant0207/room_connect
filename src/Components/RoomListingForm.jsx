@@ -38,6 +38,7 @@ const RoomListingForm = () => {
         }
     };
 
+
     return (
         <form onSubmit={handleSubmit} style={{ width: "400px", margin: "0 auto", padding: "20px", border: "2px solid black", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", fontSize: "14px" }}>
             <div>
