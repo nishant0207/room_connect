@@ -1,15 +1,24 @@
 import React from 'react';
 
-const Tiles = ({ images }) => {
-  return (
-    <div className="tiles-container">
-      {images.map((image, index) => (
-        <div key={index} className="tile">
-          <img src={image} alt={`${index}`} />
+const Tiles = ({ tilesData }) => {
+
+    const urlToVit = () => {
+        const vitUrl = "https://vit.ac.in/campuslife/hostels";
+        window.location.href = vitUrl;
+    };
+
+    return (
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '45px', justifyItems: 'center', width: "50%", alignContent: "center"}} onClick={urlToVit}>
+                {tilesData.map(tile => (
+                    <div key={tile.imageUrl} style={{ width: '300px', cursor:'pointer'}}>
+                        <img src={tile.imageUrl} alt="Hostel" style={{ width: '300px', height: '300px', objectFit: 'cover', borderRadius: '5px' }} />
+                        <h2>{tile.hostelName} Block</h2>
+                    </div>
+                ))}
+            </div>
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default Tiles;

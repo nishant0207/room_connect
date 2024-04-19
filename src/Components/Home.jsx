@@ -1,9 +1,14 @@
+// Home.jsx
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Navbar";
 import LandingArea from "./LandingArea";
 import About from "./About";
+import Profile from "./Profile";
+import HostelInfo from "./HostelInfo";
+import WhatsApp from "./WhatsApp";
+import TaxiShare from "./TaxiShare";
 
 const Home = () => {
 
@@ -21,7 +26,11 @@ const Home = () => {
       <br />
       <div>
       {currentPage === "landingPage" && <LandingArea />}
-        {currentPage === "aboutPage" && <About />}
+      {currentPage === "aboutPage" && <About />}
+      {currentPage === 'profilePage' && <Profile/>}
+      {currentPage === 'hostelInfo' && <HostelInfo/>}
+      {currentPage === 'whatsApp' && <WhatsApp/>}
+      {currentPage === 'taxiShare' && <TaxiShare/>}
       </div>
     </div>
   );

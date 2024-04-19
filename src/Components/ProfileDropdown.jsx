@@ -1,8 +1,9 @@
+// ProfileDropdown.jsx
 import React from 'react';
 import { useFirebase } from "../Context/FirebaseContext";
 import { toast } from "react-toastify";
 
-const ProfileDropdown = () => {
+const ProfileDropdown = ({ onPageChange }) => {
     const { logout } = useFirebase();
 
     const handleLogout = async () => {
@@ -14,16 +15,20 @@ const ProfileDropdown = () => {
         }
     };
 
+    const handleProfileClick = () => {
+        onPageChange('profilePage');
+    };
+
     return (
         <div className="profile_dropdown" style={{fontSize:"14px",border:"1px solid gray"}}>
             <button className="btn btn-outline-success" onClick={handleLogout}>
                 Log Out
             </button>
-            <div>
-                Settings
+            <div onClick={handleProfileClick}>
+                Profile
             </div>
             <div>
-                Profile
+                Settings
             </div>
             <div>
                 Upgrade
