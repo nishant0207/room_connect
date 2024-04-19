@@ -8,6 +8,7 @@ import { auth } from "./firebase"; // Import Firebase auth module
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import { ReactComponent as LoadingIcon } from './images/Eclipse@2x-1.0s-200px-200px.svg';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -22,9 +23,11 @@ function App() {
     return () => unsubscribe();
   }, []);
 
-  // While waiting for auth state to be loaded, show loading indicator
   if (loading) {
-    return (<div>Loading...</div>);
+    return (
+    <div style={{display:'flex', flexBasis:"100%", alignItems:'center',alignContent:'center', justifyContent:"center", height:"100vh"}}>
+      <LoadingIcon style={{ animation: 'spin 1s linear infinite' }} />
+      </div>);
   }
 
   return (
