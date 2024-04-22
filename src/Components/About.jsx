@@ -12,8 +12,8 @@ const About = () => {
 
 List your available room or search for rooms based on location, budget, and more. Our mission is to make finding roommates and accommodation easier, so you can enjoy a smooth transition to university life.</p>
       </div>
-{/*       <div className="row">
-        <TeamInfo 
+      <div className="row">
+{/*         <TeamInfo 
           name="Nishant Dalal"
           position="Frontend"
           imageSrc="https://media.licdn.com/dms/image/D5603AQFh1ghieGVbXw/profile-displayphoto-shrink_800_800/0/1695741941537?e=1718841600&v=beta&t=IaNhFaPl6MOzTNjvyfJSpA20gZW3yrGwRGgCit_suGI"
