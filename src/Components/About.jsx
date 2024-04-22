@@ -12,7 +12,7 @@ const About = () => {
 
 List your available room or search for rooms based on location, budget, and more. Our mission is to make finding roommates and accommodation easier, so you can enjoy a smooth transition to university life.</p>
       </div>
-      <div className="row">
+{/*       <div className="row">
         <TeamInfo 
           name="Nishant Dalal"
           position="Frontend"
@@ -26,7 +26,7 @@ List your available room or search for rooms based on location, budget, and more
           imageSrc="https://media.licdn.com/dms/image/D5603AQHuZ20b9Zcv0w/profile-displayphoto-shrink_400_400/0/1667813086317?e=1718841600&v=beta&t=SXWCjakA1M-ainSkBIpUi356osZ3T1yBgnFAjWz9gnM"
           linkedin = "https://www.linkedin.com/in/gyanoday06/"
           github="https://github.com/gyanoday06"
-        />
+        /> */}
         <TeamInfo 
           name="Dev Rana"
           position="Management"
