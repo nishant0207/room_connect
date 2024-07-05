@@ -5,15 +5,15 @@ import { getDatabase} from "firebase/database";
 import { getFirestore } from "firebase/firestore";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBdOlNtla7zXuKdrTn-P2G7jWOXSbU6PWE",
-  authDomain: "room-connect-4a339.firebaseapp.com",
-  projectId: "room-connect-4a339",
+  apiKey: "AIzaSyBVAzFb9LSZDk4Ex59Myx0_CCnUhWdFCkA",
+  authDomain: "room-connect-88b78.firebaseapp.com",
+  projectId: "room-connect-88b78",
   storageBucket: "room-connect-4a339.appspot.com",
-  messagingSenderId: "585959100382",
-  appId: "1:585959100382:web:63c53829e5e0cd8ce3974f",
-  measurementId: "G-K5PWBNXWW2",
+  messagingSenderId: "256986412795",
+  appId: "1:256986412795:web:9bc8705d26b1a21cb8a25e",
+  measurementId: "G-1DE065R7GV",
   databaseURL:
-    "https://room-connect-4a339-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "https://room-connect-88b78-default-rtdb.firebaseio.com",
 };
 
 const app = initializeApp(firebaseConfig);
