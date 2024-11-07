@@ -16,9 +16,9 @@ List your available room or search for rooms based on location, budget, and more
         <TeamInfo 
           name="Karan Verma"
           position="Full Stack Developer"
-          imageSrc="https://media.licdn.com/dms/image/D5603AQH4gjtEo0BgeA/profile-displayphoto-shrink_800_800/0/1719017907898?e=1725494400&v=beta&t=PEfdTrXAYxlU9FYnCkn9BEcsvxBBeubR1extS8xUepU"
-          linkedin = ""
-          github=""
+          imageSrc="https://media.licdn.com/dms/image/v2/D5635AQHqI8eVqe4W7A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1724268480656?e=1731610800&v=beta&t=nR67FF_j_Pxsrnyy86v9FGtrfaar3goZpwhMhOR4LC8"
+          linkedin = "https://www.linkedin.com/in/karan-verma-1b482b225/"
+          github="https://github.com/Albert070110"
         />
       </div>
     </div>
