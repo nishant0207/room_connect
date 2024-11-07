@@ -14,11 +14,11 @@ List your available room or search for rooms based on location, budget, and more
       </div>
       <div className="row">
         <TeamInfo 
-          name="Nishant Dalal"
-          position="Frontend"
+          name="Karan Verma"
+          position="Full Stack Developer"
           imageSrc="https://media.licdn.com/dms/image/D5603AQH4gjtEo0BgeA/profile-displayphoto-shrink_800_800/0/1719017907898?e=1725494400&v=beta&t=PEfdTrXAYxlU9FYnCkn9BEcsvxBBeubR1extS8xUepU"
-          linkedin = "www.linkedin.com/in/ndalal0207"
-          github="https://github.com/nishant0207"
+          linkedin = ""
+          github=""
         />
       </div>
     </div>
